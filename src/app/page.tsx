@@ -46,7 +46,7 @@ export default function Home() {
             </ul>
             <div className="flex gap-4">
               <a href="mailto:songpholtopku@gmail.com" className="btn btn-primary">Contact Me</a>
-              <a href="https://github.com/topku99" target="_blank" rel="noreferrer" className="btn btn-outline">GitHub Profile</a>
+              {/* <a href="https://github.com/topku99" target="_blank" rel="noreferrer" className="btn btn-outline">GitHub Profile</a> */}
             </div>
           </div>
           <div className="hero-visual">
