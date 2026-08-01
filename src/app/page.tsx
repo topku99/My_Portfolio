@@ -8,7 +8,25 @@ import { DiMsqlServer } from 'react-icons/di';
 import { GrOracle } from 'react-icons/gr';
 
 export default function Home() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [galleryState, setGalleryState] = useState<{ images: string[], currentIndex: number } | null>(null);
+
+  const openGallery = (images: string[], startIndex: number) => {
+    setGalleryState({ images, currentIndex: startIndex });
+  };
+
+  const handleNextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (galleryState) {
+      setGalleryState({ ...galleryState, currentIndex: (galleryState.currentIndex + 1) % galleryState.images.length });
+    }
+  };
+
+  const handlePrevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (galleryState) {
+      setGalleryState({ ...galleryState, currentIndex: (galleryState.currentIndex - 1 + galleryState.images.length) % galleryState.images.length });
+    }
+  };
 
   return (
     <>
@@ -269,10 +287,10 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
-                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/wise_exchange/1.png')}>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/wise_exchange/1.png', '/My_Portfolio/wise_exchange/2.png'], 0)}>
                   <Image src="/My_Portfolio/wise_exchange/1.png" alt="Wise Exchange UI 1" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/wise_exchange/2.png')}>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/wise_exchange/1.png', '/My_Portfolio/wise_exchange/2.png'], 1)}>
                   <Image src="/My_Portfolio/wise_exchange/2.png" alt="Wise Exchange UI 2" fill style={{ objectFit: 'cover' }} />
                 </div>
               </div>
@@ -290,16 +308,16 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/4.png')}>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/happy_rich/4.png', '/My_Portfolio/happy_rich/1.png', '/My_Portfolio/happy_rich/2.png', '/My_Portfolio/happy_rich/3.png'], 0)}>
                   <Image src="/My_Portfolio/happy_rich/4.png" alt="Happy Rich UI 4" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/1.png')}>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/happy_rich/4.png', '/My_Portfolio/happy_rich/1.png', '/My_Portfolio/happy_rich/2.png', '/My_Portfolio/happy_rich/3.png'], 1)}>
                   <Image src="/My_Portfolio/happy_rich/1.png" alt="Happy Rich UI 1" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/2.png')}>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/happy_rich/4.png', '/My_Portfolio/happy_rich/1.png', '/My_Portfolio/happy_rich/2.png', '/My_Portfolio/happy_rich/3.png'], 2)}>
                   <Image src="/My_Portfolio/happy_rich/2.png" alt="Happy Rich UI 2" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/3.png')}>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/happy_rich/4.png', '/My_Portfolio/happy_rich/1.png', '/My_Portfolio/happy_rich/2.png', '/My_Portfolio/happy_rich/3.png'], 3)}>
                   <Image src="/My_Portfolio/happy_rich/3.png" alt="Happy Rich UI 3" fill style={{ objectFit: 'cover' }} />
                 </div>
          
@@ -318,13 +336,13 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
-                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/gold_shop/1.png')}>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/gold_shop/1.png', '/My_Portfolio/gold_shop/3.png', '/My_Portfolio/gold_shop/4.png'], 0)}>
                   <Image src="/My_Portfolio/gold_shop/1.png" alt="Gold Shop UI 1" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/gold_shop/3.png')}>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/gold_shop/1.png', '/My_Portfolio/gold_shop/3.png', '/My_Portfolio/gold_shop/4.png'], 1)}>
                   <Image src="/My_Portfolio/gold_shop/3.png" alt="Gold Shop UI 2" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/gold_shop/4.png')}>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/gold_shop/1.png', '/My_Portfolio/gold_shop/3.png', '/My_Portfolio/gold_shop/4.png'], 2)}>
                   <Image src="/My_Portfolio/gold_shop/4.png" alt="Gold Shop UI 3" fill style={{ objectFit: 'cover' }} />
                 </div>
               </div>
@@ -382,17 +400,39 @@ export default function Home() {
           <p style={{ fontSize: '0.875rem' }}>Portfolio </p>
         </footer>
 
-        {selectedImage && (
+        {galleryState && (
           <div 
-            style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundColor: 'rgba(0,0,0,0.85)', zIndex: 9999, display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'zoom-out', backdropFilter: 'blur(5px)' }}
-            onClick={() => setSelectedImage(null)}
+            style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundColor: 'rgba(0,0,0,0.85)', zIndex: 9999, display: 'flex', justifyContent: 'center', alignItems: 'center', backdropFilter: 'blur(5px)' }}
+            onClick={() => setGalleryState(null)}
           >
-            <div style={{ position: 'relative', width: '90%', height: '90%', maxWidth: '1200px', maxHeight: '800px' }}>
-              <Image src={selectedImage} alt="Enlarged view" fill style={{ objectFit: 'contain' }} />
+            <div style={{ position: 'relative', width: '90%', height: '90%', maxWidth: '1200px', maxHeight: '800px', cursor: 'zoom-out' }} onClick={(e) => { e.stopPropagation(); setGalleryState(null); }}>
+              <Image src={galleryState.images[galleryState.currentIndex]} alt="Enlarged view" fill style={{ objectFit: 'contain' }} />
+              
+              {galleryState.images.length > 1 && (
+                <>
+                  <button 
+                    style={{ position: 'absolute', top: '50%', left: '-60px', transform: 'translateY(-50%)', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white', width: '50px', height: '50px', borderRadius: '50%', fontSize: '1.5rem', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 10000 }}
+                    onClick={handlePrevImage}
+                    aria-label="Previous image"
+                  >
+                    &#10094;
+                  </button>
+                  <button 
+                    style={{ position: 'absolute', top: '50%', right: '-60px', transform: 'translateY(-50%)', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white', width: '50px', height: '50px', borderRadius: '50%', fontSize: '1.5rem', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 10000 }}
+                    onClick={handleNextImage}
+                    aria-label="Next image"
+                  >
+                    &#10095;
+                  </button>
+                  <div style={{ position: 'absolute', bottom: '-30px', left: '0', width: '100%', textAlign: 'center', color: '#94a3b8', fontSize: '0.9rem' }}>
+                    {galleryState.currentIndex + 1} / {galleryState.images.length}
+                  </div>
+                </>
+              )}
             </div>
             <button 
               style={{ position: 'absolute', top: '20px', right: '30px', background: 'none', border: 'none', color: 'white', fontSize: '2.5rem', cursor: 'pointer' }}
-              onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+              onClick={(e) => { e.stopPropagation(); setGalleryState(null); }}
               aria-label="Close"
             >
               &times;
