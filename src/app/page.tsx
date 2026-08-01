@@ -1,8 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { SiCsharp, SiDotnet, SiAngular, SiTypescript, SiNextdotjs, SiReact, SiMicrosoftsqlserver, SiMysql, SiMariadb, SiOracle, SiDocker, SiJenkins, SiSonarqube, SiPostman } from 'react-icons/si';
-import { FaServer, FaRobot, FaTachometerAlt, FaDatabase, FaChartBar, FaCogs, FaKeyboard } from 'react-icons/fa';
+import { SiDotnet, SiAngular, SiTypescript, SiNextdotjs, SiReact, SiMysql, SiMariadb, SiDocker, SiJenkins, SiSonarqubeserver, SiPostman } from 'react-icons/si';
+import { FaServer, FaRobot, FaTachometerAlt, FaDatabase, FaChartBar, FaKeyboard } from 'react-icons/fa';
+import { TbBrandCSharp } from 'react-icons/tb';
+import { DiMsqlServer } from 'react-icons/di';
+import { GrOracle } from 'react-icons/gr';
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -90,7 +93,7 @@ export default function Home() {
               Backend & Architecture
             </h3>
             <p className="mt-4">
-              <span className="tag"><SiCsharp /> C# & .NET Ecosystem</span>
+              <span className="tag"><TbBrandCSharp /> C# & .NET Ecosystem</span>
               <span className="tag"><SiDotnet /> ASP.NET Web API</span>
               <span className="tag"><FaServer /> Backend Architecture & Integration</span>
             </p>
@@ -114,9 +117,9 @@ export default function Home() {
               Database & Reporting
             </h3>
             <p className="mt-4">
-              <span className="tag"><SiMicrosoftsqlserver /> SQL Server</span>
+              <span className="tag"><DiMsqlServer /> SQL Server</span>
               <span className="tag"><SiMysql /> MySQL & MariaDB</span>
-              <span className="tag"><SiOracle /> Oracle</span>
+              <span className="tag"><GrOracle /> Oracle</span>
               <span className="tag"><FaTachometerAlt /> Performance Tuning</span>
               <span className="tag"><FaDatabase /> Advanced Stored Procs</span>
               <span className="tag"><FaChartBar /> SSRS & Crystal Reports</span>
@@ -130,7 +133,7 @@ export default function Home() {
             <p className="mt-4">
               <span className="tag"><SiDocker /> Docker</span>
               <span className="tag"><SiJenkins /> CI/CD (Jenkins)</span>
-              <span className="tag"><SiSonarqube /> SonarQube / CheckMarx</span>
+              <span className="tag"><SiSonarqubeserver /> SonarQube / CheckMarx</span>
               <span className="tag"><SiPostman /> JMeter / Postman</span>
             </p>
           </div>
