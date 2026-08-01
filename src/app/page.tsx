@@ -234,7 +234,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section id="projects" className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-        <h2 style={{ textTransform: 'uppercase' }}>Selected Specialized Projects <span style={{ fontSize: '1rem', fontWeight: 'normal', color: '#94a3b8', textTransform: 'none' }}>(Freelance & Contract)</span></h2>
+        <h2 style={{ textTransform: 'uppercase' }}>Selected Specialized Projects <span style={{ fontSize: '1rem', fontWeight: 'normal', color: '#94a3b8', textTransform: 'none' }}>(Freelance)</span></h2>
         <div className="grid grid-cols-2">
           
           <div className="glass-card flex flex-col justify-between">
