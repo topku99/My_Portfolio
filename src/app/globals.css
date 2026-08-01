@@ -328,3 +328,45 @@ p {
   font-weight: 600;
   margin-bottom: 4px;
 }
+
+/* Image Carousel */
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Custom subtle scrollbar */
+.image-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+.image-carousel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.image-carousel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.image-carousel::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.carousel-item {
+  flex: 0 0 85%; /* Peek next image */
+  scroll-snap-align: center;
+  position: relative;
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Full width for the featured project */
+.carousel-item-large {
+  height: 320px;
+}

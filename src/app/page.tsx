@@ -128,8 +128,13 @@ export default function Home() {
           
           <div className="glass-card flex flex-col justify-between">
             <div>
-              <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '16px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/My_Portfolio/wise_exchange.png" alt="Wise Exchange UI" fill style={{ objectFit: 'cover' }} />
+              <div className="image-carousel">
+                <div className="carousel-item">
+                  <Image src="/My_Portfolio/wise_exchange/1.png" alt="Wise Exchange UI 1" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item">
+                  <Image src="/My_Portfolio/wise_exchange/2.png" alt="Wise Exchange UI 2" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
               <div className="flex justify-between items-center mb-4">
                 <h3>Wise Exchange</h3>
@@ -143,8 +148,16 @@ export default function Home() {
 
           <div className="glass-card flex flex-col justify-between">
             <div>
-              <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '16px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/My_Portfolio/gold_shop.png" alt="Gold Shop Management UI" fill style={{ objectFit: 'cover' }} />
+              <div className="image-carousel">
+                <div className="carousel-item">
+                  <Image src="/My_Portfolio/gold_shop/1.png" alt="Gold Shop UI 1" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item">
+                  <Image src="/My_Portfolio/gold_shop/3.png" alt="Gold Shop UI 2" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item">
+                  <Image src="/My_Portfolio/gold_shop/4.png" alt="Gold Shop UI 3" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
               <div className="flex justify-between items-center mb-4">
                 <h3>GOLD SHOP MANAGEMENT</h3>
@@ -158,8 +171,19 @@ export default function Home() {
 
           <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
             <div>
-              <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '16px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/My_Portfolio/happy_rich.png" alt="Happy Rich System UI" fill style={{ objectFit: 'cover' }} />
+              <div className="image-carousel">
+                <div className="carousel-item carousel-item-large">
+                  <Image src="/My_Portfolio/happy_rich/1.png" alt="Happy Rich UI 1" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item carousel-item-large">
+                  <Image src="/My_Portfolio/happy_rich/2.png" alt="Happy Rich UI 2" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item carousel-item-large">
+                  <Image src="/My_Portfolio/happy_rich/3.png" alt="Happy Rich UI 3" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item carousel-item-large">
+                  <Image src="/My_Portfolio/happy_rich/4.png" alt="Happy Rich UI 4" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
               <div className="flex justify-between items-center mb-4">
                 <h3>Happy Rich System</h3>
