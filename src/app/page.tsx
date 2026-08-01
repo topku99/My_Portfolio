@@ -257,6 +257,35 @@ export default function Home() {
             </div>
           </div>
 
+
+          <div className="glass-card flex flex-col justify-between">
+            <div>
+              <div className="image-carousel">
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/4.png')}>
+                  <Image src="/My_Portfolio/happy_rich/4.png" alt="Happy Rich UI 4" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/1.png')}>
+                  <Image src="/My_Portfolio/happy_rich/1.png" alt="Happy Rich UI 1" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/2.png')}>
+                  <Image src="/My_Portfolio/happy_rich/2.png" alt="Happy Rich UI 2" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/3.png')}>
+                  <Image src="/My_Portfolio/happy_rich/3.png" alt="Happy Rich UI 3" fill style={{ objectFit: 'cover' }} />
+                </div>
+         
+              </div>
+              <div className="flex justify-between items-center mb-4">
+                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>Happy Rich System <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(.NET FX Ecosystem)</span></h3>
+                <span className="tag">Lead Developer</span>
+              </div>
+              <p style={{ lineHeight: '1.6' }}>
+                <strong style={{ color: '#cbd5e1' }}>Comprehensive Financial Ecosystem:</strong> Engineered a multi-platform solution comprising a high-performance WPF application for tellers and a robust web application for centralized administration. Orchestrated complex real-time transactional workflows, live rate display, automated End-of-Day closing, and administrative control panels.
+              </p>
+            </div>
+          </div>
+
+          
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
@@ -277,32 +306,6 @@ export default function Home() {
               <p style={{ lineHeight: '1.6' }}>
                 <strong style={{ color: '#cbd5e1' }}>End-to-End Solutions:</strong> Architected and engineered a full-enterprise Gold Retail Management system, migrating legacy WinForms to a modern, multi-branch Dockerized .NET Core ecosystem with core accounting.<br/><br/>
                 <strong style={{ color: '#cbd5e1' }}>Complex Business Logic:</strong> Engineered complex financial logic (Gold Consignment/Pawnbroking with interest, Gold Savings with price locking, KYC/Smart Card/Passport scanner integration).
-              </p>
-            </div>
-          </div>
-
-          <div className="glass-card flex flex-col justify-between">
-            <div>
-              <div className="image-carousel">
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/1.png')}>
-                  <Image src="/My_Portfolio/happy_rich/1.png" alt="Happy Rich UI 1" fill style={{ objectFit: 'cover' }} />
-                </div>
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/2.png')}>
-                  <Image src="/My_Portfolio/happy_rich/2.png" alt="Happy Rich UI 2" fill style={{ objectFit: 'cover' }} />
-                </div>
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/3.png')}>
-                  <Image src="/My_Portfolio/happy_rich/3.png" alt="Happy Rich UI 3" fill style={{ objectFit: 'cover' }} />
-                </div>
-                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/4.png')}>
-                  <Image src="/My_Portfolio/happy_rich/4.png" alt="Happy Rich UI 4" fill style={{ objectFit: 'cover' }} />
-                </div>
-              </div>
-              <div className="flex justify-between items-center mb-4">
-                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>Happy Rich System <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(.NET FX Ecosystem)</span></h3>
-                <span className="tag">Lead Developer</span>
-              </div>
-              <p style={{ lineHeight: '1.6' }}>
-                <strong style={{ color: '#cbd5e1' }}>Comprehensive Financial Ecosystem:</strong> Engineered a multi-platform solution comprising a high-performance WPF application for tellers and a robust web application for centralized administration. Orchestrated complex real-time transactional workflows, live rate display, automated End-of-Day closing, and administrative control panels.
               </p>
             </div>
           </div>
