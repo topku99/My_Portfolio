@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { SiCsharp, SiDotnet, SiAngular, SiTypescript, SiNextdotjs, SiReact, SiMicrosoftsqlserver, SiMysql, SiMariadb, SiOracle, SiDocker, SiJenkins, SiSonarqube, SiPostman } from 'react-icons/si';
+import { FaServer, FaRobot, FaTachometerAlt, FaDatabase, FaChartBar, FaCogs, FaKeyboard } from 'react-icons/fa';
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -88,9 +90,9 @@ export default function Home() {
               Backend & Architecture
             </h3>
             <p className="mt-4">
-              <span className="tag">C# & .NET Ecosystem</span>
-              <span className="tag">ASP.NET Web API</span>
-              <span className="tag">Backend Architecture & Integration</span>
+              <span className="tag"><SiCsharp /> C# & .NET Ecosystem</span>
+              <span className="tag"><SiDotnet /> ASP.NET Web API</span>
+              <span className="tag"><FaServer /> Backend Architecture & Integration</span>
             </p>
           </div>
           <div className="glass-card">
@@ -99,11 +101,11 @@ export default function Home() {
               Modern Web & AI
             </h3>
             <p className="mt-4">
-              <span className="tag">Angular</span>
-              <span className="tag">TypeScript</span>
-              <span className="tag">Next.js & React</span>
-              <span className="tag">Generative AI</span>
-              <span className="tag">Prompt Engineering</span>
+              <span className="tag"><SiAngular /> Angular</span>
+              <span className="tag"><SiTypescript /> TypeScript</span>
+              <span className="tag"><SiNextdotjs /> Next.js & React</span>
+              <span className="tag"><FaRobot /> Generative AI</span>
+              <span className="tag"><FaKeyboard /> Prompt Engineering</span>
             </p>
           </div>
           <div className="glass-card">
@@ -112,12 +114,12 @@ export default function Home() {
               Database & Reporting
             </h3>
             <p className="mt-4">
-              <span className="tag">SQL Server</span>
-              <span className="tag">MySQL & MariaDB</span>
-              <span className="tag">Oracle</span>
-              <span className="tag">Performance Tuning</span>
-              <span className="tag">Advanced Stored Procs</span>
-              <span className="tag">SSRS & Crystal Reports</span>
+              <span className="tag"><SiMicrosoftsqlserver /> SQL Server</span>
+              <span className="tag"><SiMysql /> MySQL & MariaDB</span>
+              <span className="tag"><SiOracle /> Oracle</span>
+              <span className="tag"><FaTachometerAlt /> Performance Tuning</span>
+              <span className="tag"><FaDatabase /> Advanced Stored Procs</span>
+              <span className="tag"><FaChartBar /> SSRS & Crystal Reports</span>
             </p>
           </div>
           <div className="glass-card">
@@ -126,10 +128,10 @@ export default function Home() {
               DevOps & Testing
             </h3>
             <p className="mt-4">
-              <span className="tag">Docker</span>
-              <span className="tag">CI/CD (Jenkins)</span>
-              <span className="tag">SonarQube / CheckMarx</span>
-              <span className="tag">JMeter / Postman</span>
+              <span className="tag"><SiDocker /> Docker</span>
+              <span className="tag"><SiJenkins /> CI/CD (Jenkins)</span>
+              <span className="tag"><SiSonarqube /> SonarQube / CheckMarx</span>
+              <span className="tag"><SiPostman /> JMeter / Postman</span>
             </p>
           </div>
         </div>
