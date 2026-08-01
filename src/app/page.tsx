@@ -93,8 +93,8 @@ export default function Home() {
               Backend & Architecture
             </h3>
             <p className="mt-4">
-              <span className="tag"><TbBrandCSharp /> C# & .NET Ecosystem</span>
-              <span className="tag"><SiDotnet /> ASP.NET Web API</span>
+              <span className="tag"><TbBrandCSharp color="#9B4F96" /> C# & .NET Ecosystem</span>
+              <span className="tag"><SiDotnet color="#512BD4" /> ASP.NET Web API</span>
               <span className="tag"><FaServer /> Backend Architecture & Integration</span>
             </p>
           </div>
@@ -104,9 +104,9 @@ export default function Home() {
               Modern Web & AI
             </h3>
             <p className="mt-4">
-              <span className="tag"><SiAngular /> Angular</span>
-              <span className="tag"><SiTypescript /> TypeScript</span>
-              <span className="tag"><SiNextdotjs /> Next.js & React</span>
+              <span className="tag"><SiAngular color="#DD0031" /> Angular</span>
+              <span className="tag"><SiTypescript color="#3178C6" /> TypeScript</span>
+              <span className="tag"><SiNextdotjs color="#FFFFFF" /> Next.js & React</span>
               <span className="tag"><FaRobot /> Generative AI</span>
               <span className="tag"><FaKeyboard /> Prompt Engineering</span>
             </p>
@@ -117,9 +117,9 @@ export default function Home() {
               Database & Reporting
             </h3>
             <p className="mt-4">
-              <span className="tag"><DiMsqlServer /> SQL Server</span>
-              <span className="tag"><SiMysql /> MySQL & MariaDB</span>
-              <span className="tag"><GrOracle /> Oracle</span>
+              <span className="tag"><DiMsqlServer color="#CC292B" /> SQL Server</span>
+              <span className="tag"><SiMysql color="#4479A1" /> MySQL & MariaDB</span>
+              <span className="tag"><GrOracle color="#F80000" /> Oracle</span>
               <span className="tag"><FaTachometerAlt /> Performance Tuning</span>
               <span className="tag"><FaDatabase /> Advanced Stored Procs</span>
               <span className="tag"><FaChartBar /> SSRS & Crystal Reports</span>
@@ -131,10 +131,10 @@ export default function Home() {
               DevOps & Testing
             </h3>
             <p className="mt-4">
-              <span className="tag"><SiDocker /> Docker</span>
-              <span className="tag"><SiJenkins /> CI/CD (Jenkins)</span>
-              <span className="tag"><SiSonarqubeserver /> SonarQube / CheckMarx</span>
-              <span className="tag"><SiPostman /> JMeter / Postman</span>
+              <span className="tag"><SiDocker color="#2496ED" /> Docker</span>
+              <span className="tag"><SiJenkins color="#D33833" /> CI/CD (Jenkins)</span>
+              <span className="tag"><SiSonarqubeserver color="#4E9BCD" /> SonarQube / CheckMarx</span>
+              <span className="tag"><SiPostman color="#FF6C37" /> JMeter / Postman</span>
             </p>
           </div>
         </div>
