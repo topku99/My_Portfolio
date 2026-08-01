@@ -181,7 +181,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section id="projects" className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-        <h2>Selected Projects</h2>
+        <h2 style={{ textTransform: 'uppercase' }}>Selected Specialized Projects <span style={{ fontSize: '1rem', fontWeight: 'normal', color: '#94a3b8', textTransform: 'none' }}>(Freelance & Contract)</span></h2>
         <div className="grid grid-cols-2">
           
           <div className="glass-card flex flex-col justify-between">
@@ -195,11 +195,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4">
-                <h3>Wise Exchange</h3>
-                <span className="tag accent">AI-Driven</span>
+                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>Wise Exchange <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(Currency Exchange Platform)</span></h3>
+                <span className="tag accent">Lead Developer</span>
               </div>
-              <p>
-                Currency Exchange Platform. Concepted and engineered a decoupled architecture (Web API + Angular). Successfully utilized Generative AI and Prompt Engineering to accelerate frontend development.
+              <p style={{ lineHeight: '1.6' }}>
+                <strong style={{ color: '#cbd5e1' }}>AI-Driven Development:</strong> Concepted and engineered a decoupled architecture (Web API + Angular). Successfully utilized Generative AI and Prompt Engineering to assist in UI/UX design and significantly accelerate frontend development, reducing technical barriers. Managed full client relations, sales, scope, and price negotiation.
               </p>
             </div>
           </div>
@@ -218,11 +218,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4">
-                <h3>GOLD SHOP MANAGEMENT</h3>
-                <span className="tag">Enterprise</span>
+                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>GOLD SHOP MANAGEMENT <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(Web Application)</span></h3>
+                <span className="tag">Full-SDLC & Product Lead</span>
               </div>
-              <p>
-                Architected and engineered a full-enterprise Gold Retail Management system, migrating legacy WinForms to a modern, multi-branch Dockerized .NET Core ecosystem with core accounting.
+              <p style={{ lineHeight: '1.6' }}>
+                <strong style={{ color: '#cbd5e1' }}>End-to-End Solutions:</strong> Architected and engineered a full-enterprise Gold Retail Management system, migrating legacy WinForms to a modern, multi-branch Dockerized .NET Core ecosystem with core accounting.<br/><br/>
+                <strong style={{ color: '#cbd5e1' }}>Complex Business Logic:</strong> Engineered complex financial logic (Gold Consignment/Pawnbroking with interest, Gold Savings with price locking, KYC/Smart Card/Passport scanner integration).
               </p>
             </div>
           </div>
@@ -244,11 +245,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4">
-                <h3>Happy Rich System</h3>
-                <span className="tag">.NET Ecosystem</span>
+                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>Happy Rich System <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(.NET FX Ecosystem)</span></h3>
+                <span className="tag">Lead Developer</span>
               </div>
-              <p>
-                Engineered a multi-platform solution comprising a high-performance WPF application for tellers and a robust web application for centralized administration. Orchestrated complex real-time transactional workflows.
+              <p style={{ lineHeight: '1.6' }}>
+                <strong style={{ color: '#cbd5e1' }}>Comprehensive Financial Ecosystem:</strong> Engineered a multi-platform solution comprising a high-performance WPF application for tellers and a robust web application for centralized administration. Orchestrated complex real-time transactional workflows, live rate display, automated End-of-Day closing, and administrative control panels.
               </p>
             </div>
           </div>
@@ -257,10 +258,10 @@ export default function Home() {
             <div>
               <div className="flex justify-between items-center mb-4">
                 <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>IBS Insurance Reporting <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(OIC Compliance)</span></h3>
-                <span className="tag accent">Crisis Management</span>
+                <span className="tag accent">Team Lead & Crisis Manager</span>
               </div>
-              <p>
-                Assumed technical leadership for a failing team amidst severe performance issues. Restored client trust and personally verified intricate Oracle queries for all 50 complex regulatory reports to guarantee 100% data accuracy.
+              <p style={{ lineHeight: '1.6' }}>
+                <strong style={{ color: '#cbd5e1' }}>Crisis Intervention:</strong> Assumed technical leadership for a failing 4-person team amidst severe performance issues and strained relations. Restored client trust through proactive communication and personally verified intricate Oracle queries/data output for all 50 complex regulatory reports to guarantee 100% data accuracy.
               </p>
             </div>
           </div>
