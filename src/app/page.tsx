@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <>
       <nav className="navbar">
@@ -221,10 +225,10 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
-                <div className="carousel-item">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/wise_exchange/1.png')}>
                   <Image src="/My_Portfolio/wise_exchange/1.png" alt="Wise Exchange UI 1" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/wise_exchange/2.png')}>
                   <Image src="/My_Portfolio/wise_exchange/2.png" alt="Wise Exchange UI 2" fill style={{ objectFit: 'cover' }} />
                 </div>
               </div>
@@ -241,13 +245,13 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
-                <div className="carousel-item">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/gold_shop/1.png')}>
                   <Image src="/My_Portfolio/gold_shop/1.png" alt="Gold Shop UI 1" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/gold_shop/3.png')}>
                   <Image src="/My_Portfolio/gold_shop/3.png" alt="Gold Shop UI 2" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/gold_shop/4.png')}>
                   <Image src="/My_Portfolio/gold_shop/4.png" alt="Gold Shop UI 3" fill style={{ objectFit: 'cover' }} />
                 </div>
               </div>
@@ -265,16 +269,16 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
             <div>
               <div className="image-carousel">
-                <div className="carousel-item carousel-item-large">
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/1.png')}>
                   <Image src="/My_Portfolio/happy_rich/1.png" alt="Happy Rich UI 1" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item carousel-item-large">
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/2.png')}>
                   <Image src="/My_Portfolio/happy_rich/2.png" alt="Happy Rich UI 2" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item carousel-item-large">
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/3.png')}>
                   <Image src="/My_Portfolio/happy_rich/3.png" alt="Happy Rich UI 3" fill style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="carousel-item carousel-item-large">
+                <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/4.png')}>
                   <Image src="/My_Portfolio/happy_rich/4.png" alt="Happy Rich UI 4" fill style={{ objectFit: 'cover' }} />
                 </div>
               </div>
@@ -341,6 +345,24 @@ export default function Home() {
           <p>© 2026 Songphol Juntongtip. Designed with Next.js and Vanilla CSS.</p>
           <p style={{ fontSize: '0.875rem' }}>Portfolio Showcase Edition</p>
         </footer>
+
+        {selectedImage && (
+          <div 
+            style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundColor: 'rgba(0,0,0,0.85)', zIndex: 9999, display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'zoom-out', backdropFilter: 'blur(5px)' }}
+            onClick={() => setSelectedImage(null)}
+          >
+            <div style={{ position: 'relative', width: '90%', height: '90%', maxWidth: '1200px', maxHeight: '800px' }}>
+              <Image src={selectedImage} alt="Enlarged view" fill style={{ objectFit: 'contain' }} />
+            </div>
+            <button 
+              style={{ position: 'absolute', top: '20px', right: '30px', background: 'none', border: 'none', color: 'white', fontSize: '2.5rem', cursor: 'pointer' }}
+              onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
+        )}
       </main>
     </>
   );
