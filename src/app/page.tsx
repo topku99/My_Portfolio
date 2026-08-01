@@ -61,7 +61,10 @@ export default function Home() {
           
         {/* Education Section */}
         <section className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-          <h2>Education</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            Education
+          </h2>
           <div className="glass-card flex justify-between items-center">
             <div>
               <h3 style={{ marginBottom: '8px' }}>Bachelor of Science in Computer Science</h3>
@@ -74,7 +77,10 @@ export default function Home() {
 
         {/* Skills Section */}
         <section id="skills" className="mb-8 mt-8">
-        <h2>Technical Skills</h2>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          Technical Skills
+        </h2>
         <div className="grid grid-cols-2">
           <div className="glass-card">
             <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -131,7 +137,10 @@ export default function Home() {
 
         {/* Experience Section */}
         <section id="experience" className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-        <h2>Professional Journey</h2>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0 1 12 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2m4 6h.01M5 20h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"></path></svg>
+          Professional Journey
+        </h2>
         <div className="timeline">
           
           <div className="timeline-item">
@@ -246,7 +255,10 @@ export default function Home() {
 
         {/* Projects Section */}
         <section id="projects" className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-        <h2 style={{ textTransform: 'uppercase' }}>Selected Specialized Projects <span style={{ fontSize: '1rem', fontWeight: 'normal', color: '#94a3b8', textTransform: 'none' }}>(Freelance)</span></h2>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '12px', textTransform: 'uppercase' }}>
+          <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          Selected Specialized Projects <span style={{ fontSize: '1rem', fontWeight: 'normal', color: '#94a3b8', textTransform: 'none' }}>(Freelance)</span>
+        </h2>
         <div className="grid grid-cols-2">
           
           <div className="glass-card flex flex-col justify-between">
