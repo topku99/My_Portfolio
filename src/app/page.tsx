@@ -18,15 +18,24 @@ export default function Home() {
         <section id="about" className="hero-layout mb-8">
           <div>
             <div className="tag accent mb-4">Available for AI & Full Stack Roles</div>
-            <h1>Songphol Juntongtip</h1>
-            <h3 style={{ marginBottom: '24px', color: '#60a5fa' }}>Senior Full Stack Engineer</h3>
-            <p style={{ fontSize: '1.15rem', color: '#cbd5e1', marginBottom: '32px' }}>
-              Transitioning to AI Developer. 
-              Expert in Backend Architecture, System Integration, and creating robust enterprise solutions using modern technologies.
+            <h1 style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>Songphol Juntongtip</h1>
+            <h3 style={{ marginBottom: '16px', color: '#60a5fa' }}>Senior Full Stack Engineer</h3>
+            
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '24px', fontSize: '0.9rem', color: '#94a3b8' }}>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📍 Samut Prakan, Thailand</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📱 092-4078383</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>💬 Line: topku15</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>✉️ songpholtopku@gmail.com</span>
+            </div>
+
+            <p style={{ fontSize: '1.05rem', color: '#cbd5e1', marginBottom: '32px', lineHeight: '1.7' }}>
+              Expert in Backend Architecture and System Integration using .NET. 
+              Successfully leveraging Generative AI to bridge technical gaps in frontend development. 
+              Proven track record in system stability and scalability. Seeking to transition into an AI Developer role.
             </p>
             <div className="flex gap-4">
               <a href="mailto:songpholtopku@gmail.com" className="btn btn-primary">Contact Me</a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="btn btn-outline">GitHub Profile</a>
+              <a href="https://github.com/topku99" target="_blank" rel="noreferrer" className="btn btn-outline">GitHub Profile</a>
             </div>
           </div>
           <div className="hero-visual">
@@ -43,32 +52,41 @@ export default function Home() {
           <div className="glass-card">
             <h3>Backend & Architecture</h3>
             <p className="mt-4">
-              <span className="tag">C#</span>
-              <span className="tag">.NET Core</span>
+              <span className="tag">C# & .NET Ecosystem</span>
               <span className="tag">ASP.NET Web API</span>
               <span className="tag">Microservices</span>
-              <span className="tag">SQL Server</span>
+              <span className="tag">WCF / SOAP</span>
               <span className="tag">RabbitMQ</span>
             </p>
           </div>
           <div className="glass-card">
             <h3>Modern Web & AI</h3>
             <p className="mt-4">
-              <span className="tag">Next.js</span>
-              <span className="tag">React</span>
               <span className="tag">Angular</span>
               <span className="tag">TypeScript</span>
+              <span className="tag">Next.js & React</span>
               <span className="tag accent">Generative AI</span>
               <span className="tag accent">Prompt Engineering</span>
             </p>
           </div>
-          <div className="glass-card" style={{ gridColumn: '1 / -1' }}>
-            <h3>DevOps & Infrastructure</h3>
+          <div className="glass-card">
+            <h3>Database Management</h3>
+            <p className="mt-4">
+              <span className="tag">SQL Server</span>
+              <span className="tag">MySQL & MariaDB</span>
+              <span className="tag">Oracle</span>
+              <span className="tag">Performance Tuning</span>
+              <span className="tag">Advanced Stored Procs</span>
+            </p>
+          </div>
+          <div className="glass-card">
+            <h3>DevOps & Testing</h3>
             <p className="mt-4">
               <span className="tag">Docker</span>
               <span className="tag">CI/CD (Jenkins)</span>
-              <span className="tag">Azure</span>
-              <span className="tag">SonarQube</span>
+              <span className="tag">SonarQube / CheckMarx</span>
+              <span className="tag">SSRS & Crystal Reports</span>
+              <span className="tag">JMeter / Postman</span>
             </p>
           </div>
         </div>
@@ -114,6 +132,45 @@ export default function Home() {
               </div>
               <p>
                 Designed and implemented a scalable SMS Service API with manage-queued delivery for high-volume reliable messaging. Developed C# Batch Jobs automating "No Claim Bonus" logic.
+              </p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-date">June 2016 – April 2019</div>
+            <div className="glass-card">
+              <div className="flex justify-between items-center mb-4">
+                <h3>Thai Insurers Datanet</h3>
+                <span className="tag">Application Developer</span>
+              </div>
+              <p>
+                Delivered actionable data analytics tools and optimized central databases. Developed the RVP Dashboard to visualize critical KPIs and implemented rigorous data mapping for industry-wide compliance.
+              </p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-date">March 2015 – May 2016</div>
+            <div className="glass-card">
+              <div className="flex justify-between items-center mb-4">
+                <h3>Freewill Solutions</h3>
+                <span className="tag">Consultant / App Developer</span>
+              </div>
+              <p>
+                Developed management claim platform for shipping insurance (CPIO). Engineered reporting subsystem for operational insights utilizing SQL Server and Crystal Reports.
+              </p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-date">2013 – 2015</div>
+            <div className="glass-card">
+              <div className="flex justify-between items-center mb-4">
+                <h3>Greenline Synergy (BDMS)</h3>
+                <span className="tag">Application Developer</span>
+              </div>
+              <p>
+                Provided Tier-2 support for HIS system. Developed interfaces connecting HIS with BJC PACS to automate automatic retrieve result for X-Ray.
               </p>
             </div>
           </div>
@@ -191,6 +248,18 @@ export default function Home() {
               </div>
               <p>
                 Engineered a multi-platform solution comprising a high-performance WPF application for tellers and a robust web application for centralized administration. Orchestrated complex real-time transactional workflows.
+              </p>
+            </div>
+          </div>
+
+          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+            <div>
+              <div className="flex justify-between items-center mb-4">
+                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>IBS Insurance Reporting <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(OIC Compliance)</span></h3>
+                <span className="tag accent">Crisis Management</span>
+              </div>
+              <p>
+                Assumed technical leadership for a failing team amidst severe performance issues. Restored client trust and personally verified intricate Oracle queries for all 50 complex regulatory reports to guarantee 100% data accuracy.
               </p>
             </div>
           </div>
