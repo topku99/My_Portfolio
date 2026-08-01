@@ -300,8 +300,6 @@ export default function Home() {
             </div>
           </div>
 
-          </div>
-
           <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
             <div>
               <div className="flex justify-between items-center mb-4">
