@@ -30,6 +30,7 @@ export default function Home() {
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📱 092-4078383</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>💬 Line: topku15</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>✉️ songpholtopku@gmail.com</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>💼 <a href="https://www.linkedin.com/in/songphol-juntongtip-29057910b/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>LinkedIn</a></span>
               {/* <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📘 <a href="https://www.facebook.com/Topku15" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Facebook</a></span> */}
             </div>
 
