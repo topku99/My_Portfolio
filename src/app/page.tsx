@@ -77,9 +77,7 @@ export default function Home() {
             <p className="mt-4">
               <span className="tag">C# & .NET Ecosystem</span>
               <span className="tag">ASP.NET Web API</span>
-              <span className="tag">Microservices</span>
-              <span className="tag">WCF / SOAP</span>
-              <span className="tag">RabbitMQ</span>
+              <span className="tag">Backend Architecture & Integration</span>
             </p>
           </div>
           <div className="glass-card">
@@ -93,13 +91,14 @@ export default function Home() {
             </p>
           </div>
           <div className="glass-card">
-            <h3>Database Management</h3>
+            <h3>Database & Reporting</h3>
             <p className="mt-4">
               <span className="tag">SQL Server</span>
               <span className="tag">MySQL & MariaDB</span>
               <span className="tag">Oracle</span>
               <span className="tag">Performance Tuning</span>
               <span className="tag">Advanced Stored Procs</span>
+              <span className="tag">SSRS & Crystal Reports</span>
             </p>
           </div>
           <div className="glass-card">
@@ -108,7 +107,6 @@ export default function Home() {
               <span className="tag">Docker</span>
               <span className="tag">CI/CD (Jenkins)</span>
               <span className="tag">SonarQube / CheckMarx</span>
-              <span className="tag">SSRS & Crystal Reports</span>
               <span className="tag">JMeter / Postman</span>
             </p>
           </div>
