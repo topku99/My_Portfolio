@@ -21,9 +21,9 @@ export default function Home() {
         {/* Hero Section */}
         <section id="about" className="hero-layout mb-8">
           <div>
-            <div className="tag accent mb-4">Available for AI & Full Stack Roles</div>
+            {/* <div className="tag accent mb-4">Available for AI & Full Stack Roles</div> */}
             <h1 style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>Songphol Juntongtip (Top)</h1>
-            <h3 style={{ marginBottom: '16px', color: '#60a5fa' }}>Senior Full Stack Engineer</h3>
+            <h3 style={{ marginBottom: '16px', color: '#60a5fa' }}>Full Stack Engineer</h3>
             
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '24px', fontSize: '0.9rem', color: '#94a3b8' }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📍 Samut Prakan, Thailand</span>
