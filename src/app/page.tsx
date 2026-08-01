@@ -22,7 +22,7 @@ export default function Home() {
         <section id="about" className="hero-layout mb-8">
           <div>
             <div className="tag accent mb-4">Available for AI & Full Stack Roles</div>
-            <h1 style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>Songphol Juntongtip</h1>
+            <h1 style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>Songphol Juntongtip (Top)</h1>
             <h3 style={{ marginBottom: '16px', color: '#60a5fa' }}>Senior Full Stack Engineer</h3>
             
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '24px', fontSize: '0.9rem', color: '#94a3b8' }}>
@@ -30,7 +30,7 @@ export default function Home() {
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📱 092-4078383</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>💬 Line: topku15</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>✉️ songpholtopku@gmail.com</span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📘 <a href="https://www.facebook.com/Topku15" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Facebook</a></span>
+              {/* <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>📘 <a href="https://www.facebook.com/Topku15" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Facebook</a></span> */}
             </div>
 
             <p style={{ fontSize: '1.05rem', color: '#cbd5e1', marginBottom: '16px', lineHeight: '1.7' }}>
@@ -53,6 +53,18 @@ export default function Home() {
               <Image src="/My_Portfolio/profile.jpg" alt="Songphol Juntongtip" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
+          
+        {/* Education Section */}
+        <section className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
+          <h2>Education</h2>
+          <div className="glass-card flex justify-between items-center">
+            <div>
+              <h3 style={{ marginBottom: '8px' }}>Bachelor of Science in Computer Science</h3>
+              <p style={{ margin: 0 }}>Kasetsart University, Thailand</p>
+            </div>
+            <div className="tag">Graduated May 2013</div>
+          </div>
+        </section>
         </section>
 
         {/* Skills Section */}
@@ -266,7 +278,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+          <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
                 <div className="carousel-item carousel-item-large" style={{ cursor: 'zoom-in' }} onClick={() => setSelectedImage('/My_Portfolio/happy_rich/1.png')}>
@@ -329,21 +341,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Education Section */}
-        <section className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-          <h2>Education</h2>
-          <div className="glass-card flex justify-between items-center">
-            <div>
-              <h3 style={{ marginBottom: '8px' }}>Bachelor of Science in Computer Science</h3>
-              <p style={{ margin: 0 }}>Kasetsart University, Thailand</p>
-            </div>
-            <div className="tag">Graduated May 2013</div>
-          </div>
-        </section>
 
         <footer style={{ borderTop: '1px solid var(--card-border)', paddingTop: '24px', textAlign: 'center', marginTop: '64px', color: '#64748b' }}>
-          <p>© 2026 Songphol Juntongtip. Designed with Next.js and Vanilla CSS.</p>
-          <p style={{ fontSize: '0.875rem' }}>Portfolio Showcase Edition</p>
+          <p>© 2026 Songphol Juntongtip. </p>
+          <p style={{ fontSize: '0.875rem' }}>Portfolio </p>
         </footer>
 
         {selectedImage && (
