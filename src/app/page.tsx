@@ -31,14 +31,7 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div style={{ position: 'relative', width: '250px', height: '250px', borderRadius: '50%', overflow: 'hidden', border: '4px solid rgba(255, 255, 255, 0.1)', zIndex: 1, backgroundColor: 'var(--secondary)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-              {/* NOTE: To add your photo, place "profile.jpg" in the /public folder and uncomment the Image tag below */}
-              {/* <Image src="/profile.jpg" alt="Songphol Juntongtip" fill style={{ objectFit: 'cover' }} /> */}
-              
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#64748b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '8px' }}>
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-              <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', textAlign: 'center' }}>Your Photo<br/>(/public/profile.jpg)</p>
+              <Image src="/profile.jpg" alt="Songphol Juntongtip" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </section>
