@@ -87,8 +87,8 @@ export default function Home() {
               <span className="tag">Angular</span>
               <span className="tag">TypeScript</span>
               <span className="tag">Next.js & React</span>
-              <span className="tag accent">Generative AI</span>
-              <span className="tag accent">Prompt Engineering</span>
+              <span className="tag">Generative AI</span>
+              <span className="tag">Prompt Engineering</span>
             </p>
           </div>
           <div className="glass-card">
