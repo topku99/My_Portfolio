@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div style={{ position: 'relative', width: '250px', height: '250px', borderRadius: '50%', overflow: 'hidden', border: '4px solid rgba(255, 255, 255, 0.1)', zIndex: 1, backgroundColor: 'var(--secondary)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-              <Image src="/profile.jpg" alt="Songphol Juntongtip" fill style={{ objectFit: 'cover' }} />
+              <Image src="/My_Portfolio/profile.jpg" alt="Songphol Juntongtip" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </section>
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '16px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/wise_exchange.png" alt="Wise Exchange UI" fill style={{ objectFit: 'cover' }} />
+                <Image src="/My_Portfolio/wise_exchange.png" alt="Wise Exchange UI" fill style={{ objectFit: 'cover' }} />
               </div>
               <div className="flex justify-between items-center mb-4">
                 <h3>Wise Exchange</h3>
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between">
             <div>
               <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '16px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/gold_shop.png" alt="Gold Shop Management UI" fill style={{ objectFit: 'cover' }} />
+                <Image src="/My_Portfolio/gold_shop.png" alt="Gold Shop Management UI" fill style={{ objectFit: 'cover' }} />
               </div>
               <div className="flex justify-between items-center mb-4">
                 <h3>GOLD SHOP MANAGEMENT</h3>
@@ -159,7 +159,7 @@ export default function Home() {
           <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
             <div>
               <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '16px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/happy_rich.png" alt="Happy Rich System UI" fill style={{ objectFit: 'cover' }} />
+                <Image src="/My_Portfolio/happy_rich.png" alt="Happy Rich System UI" fill style={{ objectFit: 'cover' }} />
               </div>
               <div className="flex justify-between items-center mb-4">
                 <h3>Happy Rich System</h3>
