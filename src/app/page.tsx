@@ -344,34 +344,54 @@ export default function Home() {
 
           <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
             <div>
+              <div className="image-carousel">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/ibs_insurance_reporting/1.png', '/My_Portfolio/ibs_insurance_reporting/2.png', '/My_Portfolio/ibs_insurance_reporting/3.png'], 0)}>
+                  <Image src="/My_Portfolio/ibs_insurance_reporting/1.png" alt="IBS Reporting 1" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/ibs_insurance_reporting/1.png', '/My_Portfolio/ibs_insurance_reporting/2.png', '/My_Portfolio/ibs_insurance_reporting/3.png'], 1)}>
+                  <Image src="/My_Portfolio/ibs_insurance_reporting/2.png" alt="IBS Reporting 2" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/ibs_insurance_reporting/1.png', '/My_Portfolio/ibs_insurance_reporting/2.png', '/My_Portfolio/ibs_insurance_reporting/3.png'], 2)}>
+                  <Image src="/My_Portfolio/ibs_insurance_reporting/3.png" alt="IBS Reporting 3" fill style={{ objectFit: 'cover' }} />
+                </div>
+              </div>
               <div className="flex justify-between items-center mb-4">
                 <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>IBS Insurance Reporting <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(OIC Compliance)</span></h3>
                 <span className="tag accent">Team Lead & Crisis Manager</span>
               </div>
               <p style={{ lineHeight: '1.6' }}>
-                <strong style={{ color: '#cbd5e1' }}>Crisis Intervention:</strong> Assumed technical leadership for a failing 4-person team amidst severe performance issues and strained relations. Restored client trust through proactive communication and personally verified intricate Oracle queries/data output for all 50 complex regulatory reports to guarantee 100% data accuracy.
+                <strong style={{ color: '#cbd5e1' }}>Crisis Intervention:</strong> Assumed technical leadership for a failing 4-person team amidst severe performance issues report 50  and strained relations. Restored client trust through proactive communication and personally verified intricate Oracle queries/data output for all 50 complex regulatory reports to guarantee 100% data accuracy.
               </p>
             </div>
           </div>
-
-          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+        <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
             <div>
-              <div className="flex justify-between items-center mb-4">
-                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>XMS <span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(Exchange Management System)</span></h3>
+              <div className="image-carousel">
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/doctor_schedule/1.png', '/My_Portfolio/doctor_schedule/2.png', '/My_Portfolio/doctor_schedule/3.png'], 0)}>
+                  <Image src="/My_Portfolio/doctor_schedule/1.png" alt="Doctor Schedule 1" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/doctor_schedule/1.png', '/My_Portfolio/doctor_schedule/2.png', '/My_Portfolio/doctor_schedule/3.png'], 1)}>
+                  <Image src="/My_Portfolio/doctor_schedule/2.png" alt="Doctor Schedule 2" fill style={{ objectFit: 'cover' }} />
+                </div>
+                <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/doctor_schedule/1.png', '/My_Portfolio/doctor_schedule/2.png', '/My_Portfolio/doctor_schedule/3.png'], 2)}>
+                  <Image src="/My_Portfolio/doctor_schedule/3.png" alt="Doctor Schedule 3" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
-              <p style={{ lineHeight: '1.6' }}>
-                <strong style={{ color: '#cbd5e1' }}>Inventory Management:</strong> Developed a specialized inventory management system for foreign currency exchange businesses, ensuring accurate real-time stock tracking and transaction balancing.
-              </p>
-            </div>
-          </div>
-
-          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
-            <div>
               <div className="flex justify-between items-center mb-4">
                 <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>Doctor Schedule System</h3>
               </div>
               <p style={{ lineHeight: '1.6' }}>
                 <strong style={{ color: '#cbd5e1' }}>Workforce Management:</strong> Designed and developed bug fixes for a workforce management solution to optimize physician shift scheduling and automate leave management.
+              </p>
+            </div>
+          </div>
+          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+            <div>
+              <div className="flex justify-between items-center mb-4">
+                <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>XMS SuperRich<span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(Exchange Management System)</span></h3>
+              </div>
+              <p style={{ lineHeight: '1.6' }}>
+                <strong style={{ color: '#cbd5e1' }}>Inventory Management:</strong> Developed a specialized inventory management system for foreign currency exchange businesses, ensuring accurate real-time stock tracking and transaction balancing.
               </p>
             </div>
           </div>
