@@ -80,20 +80,7 @@ export default function Home() {
             </div>
           </div>
           
-        {/* Education Section */}
-        <section className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
-          <h2 style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-            Education
-          </h2>
-          <div className="glass-card flex justify-between items-center">
-            <div>
-              <h3 style={{ marginBottom: '8px' }}>Bachelor of Science in Computer Science</h3>
-              <p style={{ margin: 0 }}>Kasetsart University, Thailand</p>
-            </div>
-            <div className="tag">Graduated May 2013</div>
-          </div>
-        </section>
+
         </section>
 
         {/* Skills Section */}
@@ -390,8 +377,22 @@ export default function Home() {
           </div>
 
           </div>
+          
         </section>
-
+        {/* Education Section */}
+        <section className="mb-8 mt-8" style={{ paddingTop: '40px' }}>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            Education
+          </h2>
+          <div className="glass-card flex justify-between items-center">
+            <div>
+              <h3 style={{ marginBottom: '8px' }}>Bachelor of Science in Computer Science</h3>
+              <p style={{ margin: 0 }}>Kasetsart University, Thailand</p>
+            </div>
+            <div className="tag">Graduated May 2013</div>
+          </div>
+        </section>
 
         <footer style={{ borderTop: '1px solid var(--card-border)', paddingTop: '24px', textAlign: 'center', marginTop: '64px', color: '#64748b' }}>
           <p>© 2026 Songphol Juntongtip. </p>
