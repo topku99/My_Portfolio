@@ -385,7 +385,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+          <div className="glass-card flex flex-col justify-between" >
             <div>
               <div className="flex justify-between items-center mb-4">
                 <h3 style={{ fontSize: '1.25rem', color: '#fff' }}>XMS SuperRich<span style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 'normal' }}>(Exchange Management System)</span></h3>
