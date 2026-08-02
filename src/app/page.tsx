@@ -342,7 +342,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+          <div className="glass-card flex flex-col justify-between" >
             <div>
               <div className="image-carousel">
                 <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/ibs_insurance_reporting/1.png', '/My_Portfolio/ibs_insurance_reporting/2.png', '/My_Portfolio/ibs_insurance_reporting/3.png'], 0)}>
@@ -364,7 +364,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        <div className="glass-card flex flex-col justify-between" style={{ gridColumn: '1 / -1' }}>
+        <div className="glass-card flex flex-col justify-between">
             <div>
               <div className="image-carousel">
                 <div className="carousel-item" style={{ cursor: 'zoom-in' }} onClick={() => openGallery(['/My_Portfolio/doctor_schedule/1.png', '/My_Portfolio/doctor_schedule/2.png', '/My_Portfolio/doctor_schedule/3.png'], 0)}>
