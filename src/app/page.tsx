@@ -58,9 +58,7 @@ export default function Home() {
             </div>
 
             <p style={{ fontSize: '1.05rem', color: '#cbd5e1', marginBottom: '16px', lineHeight: '1.7' }}>
-              Senior Full Stack Engineer with a strong background in the Financial and Insurance sectors. Expert in Backend Architecture and System Integration using .NET. 
-              Successfully leveraging AI-driven workflows to deliver complex full-stack applications, utilizing AI to bridge technical gaps in frontend development. 
-              Proven track record in System Stability, Governance, and Scalability. Seeking to transition into an AI Developer role.
+              Senior Full Stack Engineer with a strong background in the Financial and Insurance sectors. Expert in Backend Architecture, System Integration using .NET, and delivering complex full-stack applications. Proven track record in ensuring System Stability, Governance, and Scalability for enterprise systems. Passionate about continuous learning and eager to apply my robust engineering foundation toward innovative AI solutions.
             </p>
             <ul style={{ color: '#94a3b8', fontSize: '0.95rem', marginBottom: '32px', listStyleType: 'disc', paddingLeft: '20px', lineHeight: '1.6' }}>
               <li><strong style={{ color: '#fff' }}>Communication:</strong> Translating user requirements to business logic.</li>
